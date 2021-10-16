@@ -1,0 +1,44 @@
+<html>
+    <head>
+
+
+    </head>
+    <body>
+        <input type="text" name="enter the value" id="t1">
+        <input type="text" name="enter the second value" id="t2">
+        <button onclick="add()">add</button>
+        <button onclick="sub()">sub</button>
+        <button onclick="mult()">multiplication</button>
+        <button onclick="div()">division</button>
+<script>
+    function add()
+    {
+        var a=Number(document.getElementById("t1").value);
+        var b=Number(document.getElementById("t2").value);
+        var sum=a+b;
+        document.writeln("addition of two no is"+sum,"<BR>");
+    }
+    function sub()
+    {
+        var a=Number(document.getElementById("t1").value);
+        var b=Number(document.getElementById("t2").value);
+        var sum=a-b;
+        document.writeln("substraction of two no is"+sum,"<BR>");
+    }
+    function mult()
+    {
+        var a=Number(document.getElementById("t1").value);
+        var b=Number(document.getElementById("t2").value);
+        var sum=a*b;
+        document.writeln("multiplication of two no is"+sum,"<BR>");
+    }
+    function div()
+    {
+        var a=Number(document.getElementById("t1").value);
+        var b=Number(document.getElementById("t2").value);
+        var sum=a/b;
+        document.writeln("division of two no is"+sum,"<BR>");
+    }
+</script>
+    </body>
+</html>
