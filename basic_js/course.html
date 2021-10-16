@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<label>enter the name</label>
+<input type="text" id="name">
+<label>select the course u enrolled</label><br>c
+<input type="checkbox" id="c"><br>c++
+<input type="checkbox" id="cpp"><br>c#
+<input type="checkbox" id="csharp"><br>java
+<input type="checkbox" id="java">
+<button onclick="a()">submit</button>
+</body>
+<script type="text/javascript">
+function a(){
+var str="name:"
+var name=document.getElementById("name")
+var c=document.getElementById("c")
+var cpp=document.getElementById("cpp")
+var csharp=document.getElementById("csharp")
+var java=document.getElementById("java")
+str+=name.value
+str+="  course enrolled:"
+if(c.checked){
+str+=" c"
+}
+if(cpp.checked){
+str+=" cpp"
+}
+if(csharp.checked){
+str+=" c#"
+}
+if(java.checked){
+str+=" java"
+}
+alert(str)
+}
+</script>
+</html>
