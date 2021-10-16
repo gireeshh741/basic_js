@@ -1,0 +1,12 @@
+<html>
+  <head> </head>
+  <body>
+    <input type="file" id="img" onchange="a()" />
+  </body>
+  <script>
+    document.querySelector("input").onchange = function () {
+      var url = URL.createObjectURL(this.files[0]);
+      document.body.style.background = "url(" + url + ") no-repeat";
+    };
+  </script>
+</html>
